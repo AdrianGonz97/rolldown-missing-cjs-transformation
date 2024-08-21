@@ -1,0 +1,12 @@
+{
+	"name": "rolldown-missing-transformation",
+	"version": "0.0.0",
+	"type": "module",
+	"scripts": {
+		"build": "rolldown -c"
+	},
+	"devDependencies": {
+		"picocolors": "^1.0.1",
+		"rolldown": "^0.12.2"
+	}
+}
