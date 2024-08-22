@@ -1,3 +1,3 @@
-import * as pc from "picocolors";
+import { foo } from "./commonjs.cjs";
 
-console.log(pc.yellow("Hello!"));
+console.log(foo);

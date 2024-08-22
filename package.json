@@ -3,11 +3,16 @@
 	"version": "0.0.0",
 	"type": "module",
 	"scripts": {
-		"build": "rolldown -c",
-		"start": "node dist"
+		"build": "rolldown -c && rollup -c",
+		"build:rolldown": "rolldown -c",
+		"start:rolldown": "node dist-rolldown",
+		"build:rollup": "rollup -c",
+		"start:rollup": "node dist-rollup"
 	},
 	"devDependencies": {
-		"picocolors": "^1.0.1",
-		"rolldown": "^0.12.2"
+		"@rollup/plugin-commonjs": "^26.0.1",
+		"@types/node": "^20",
+		"rolldown": "^0.12.2",
+		"rollup": "^4.21.0"
 	}
 }
